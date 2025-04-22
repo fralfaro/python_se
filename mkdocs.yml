@@ -30,7 +30,7 @@ extra_css:
 # Theme
 theme:
   name: material
-  language: en
+  language: es
   logo: images/python.svg
   favicon: images/icon.png
   palette:
@@ -93,8 +93,20 @@ nav:
         - index.md
     - 📖 Unidad 1:
         - unit1/README.md
+        - unit1/pep.md
+        - unit1/scripts.md
+        - unit1/paradigm.md
+        - unit1/function.md
+        - unit1/classes.md
+        - unit1/typing.md
+        - unit1/pydantic.md
+        - unit1/pythonic.md
     - 📖 Unidad 2:
         - unit2/README.md
+        - unit2/solid.md
+        - unit2/design_pattern.md
+        - unit2/refactoring.md
+        - unit2/structure.md
     - 📖 Unidad 3:
         - unit3/README.md
     - 📖 Unidad 4:
