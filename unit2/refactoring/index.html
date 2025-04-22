@@ -10,28 +10,28 @@
         <meta name="author" content="Francisco Alfaro">
       
       
-        <link rel="canonical" href="https://github.com/fralfaro/python_se/unit3/">
+        <link rel="canonical" href="https://github.com/fralfaro/python_se/unit2/refactoring/">
       
       
-        <link rel="prev" href="../unit2/structure/">
+        <link rel="prev" href="../design_pattern/">
       
       
-        <link rel="next" href="../unit4/">
+        <link rel="next" href="../structure/">
       
       
-      <link rel="icon" href="../images/icon.png">
+      <link rel="icon" href="../../images/icon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.25">
     
     
       
-        <title>🌿 Unidad 3: Control de Versiones - Python Software Engineering</title>
+        <title>Refactorización de Código - Python Software Engineering</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../css/neoteroi-mkdocs.css">
+      <link rel="stylesheet" href="../../css/neoteroi-mkdocs.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unidad-3-control-de-versiones" class="md-skip">
+        <a href="#refactorizacion-de-codigo" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -92,9 +92,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href=".." title="Python Software Engineering" class="md-header__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
+    <a href="../.." title="Python Software Engineering" class="md-header__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
       
-  <img src="../images/python.svg" alt="logo">
+  <img src="../../images/python.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🌿 Unidad 3: Control de Versiones
+              Refactorización de Código
             
           </span>
         </div>
@@ -222,7 +222,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -242,32 +242,12 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit1/" class="md-tabs__link">
+        <a href="../../unit1/" class="md-tabs__link">
           
   
     
   
   📖 Unidad 1
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../unit2/" class="md-tabs__link">
-          
-  
-    
-  
-  📖 Unidad 2
 
         </a>
       </li>
@@ -284,7 +264,27 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  📖 Unidad 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../unit3/" class="md-tabs__link">
           
   
     
@@ -304,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit4/" class="md-tabs__link">
+        <a href="../../unit4/" class="md-tabs__link">
           
   
     
@@ -324,7 +324,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit5/" class="md-tabs__link">
+        <a href="../../unit5/" class="md-tabs__link">
           
   
     
@@ -344,7 +344,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit6/" class="md-tabs__link">
+        <a href="../../unit6/" class="md-tabs__link">
           
   
     
@@ -364,7 +364,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit7/" class="md-tabs__link">
+        <a href="../../unit7/" class="md-tabs__link">
           
   
     
@@ -384,7 +384,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit8/" class="md-tabs__link">
+        <a href="../../unit8/" class="md-tabs__link">
           
   
     
@@ -419,9 +419,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Python Software Engineering" class="md-nav__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
+    <a href="../.." title="Python Software Engineering" class="md-nav__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
       
-  <img src="../images/python.svg" alt="logo">
+  <img src="../../images/python.svg" alt="logo">
 
     </a>
     Python Software Engineering
@@ -469,7 +469,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -541,7 +541,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit1/" class="md-nav__link ">
+            <a href="../../unit1/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -574,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pep/" class="md-nav__link">
+      <a href="../../unit1/pep/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/scripts/" class="md-nav__link">
+      <a href="../../unit1/scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -616,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/paradigm/" class="md-nav__link">
+      <a href="../../unit1/paradigm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -637,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/function/" class="md-nav__link">
+      <a href="../../unit1/function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -658,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/classes/" class="md-nav__link">
+      <a href="../../unit1/classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -679,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/typing/" class="md-nav__link">
+      <a href="../../unit1/typing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -700,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pydantic/" class="md-nav__link">
+      <a href="../../unit1/pydantic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -721,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pythonic/" class="md-nav__link">
+      <a href="../../unit1/pythonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -746,6 +746,8 @@
       
   
   
+    
+  
   
   
     
@@ -766,19 +768,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit2/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -789,13 +794,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 2
@@ -811,7 +816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/solid/" class="md-nav__link">
+      <a href="../solid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -832,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/design_pattern/" class="md-nav__link">
+      <a href="../design_pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -850,10 +855,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../unit2/refactoring/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Refactorización de Código
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -862,6 +887,191 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-la-refactorizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es la refactorización?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuando-refactorizar" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cuándo refactorizar?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principios-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principios clave
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos-comunes-de-refactorizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos comunes de refactorización
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplos comunes de refactorización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renombrar-variables-y-funciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Renombrar variables y funciones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extraer-funciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Extraer funciones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-duplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Eliminar duplicación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usar-estructuras-idiomaticas-de-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Usar estructuras idiomáticas de Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refactorizaciones-estructurales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refactorizaciones estructurales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Refactorizaciones estructurales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#separar-responsabilidades-single-responsibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Separar responsabilidades (Single Responsibility)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reemplazar-condicionales-con-polimorfismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Reemplazar condicionales con polimorfismo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herramientas-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herramientas útiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errores comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos recomendados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -874,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/structure/" class="md-nav__link">
+      <a href="../structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,8 +1109,6 @@
       
   
   
-    
-  
   
   
     
@@ -913,22 +1121,19 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../unit3/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -940,7 +1145,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 3
@@ -984,7 +1189,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit4/" class="md-nav__link ">
+            <a href="../../unit4/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1040,7 +1245,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit5/" class="md-nav__link ">
+            <a href="../../unit5/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1096,7 +1301,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit6/" class="md-nav__link ">
+            <a href="../../unit6/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1152,7 +1357,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit7/" class="md-nav__link ">
+            <a href="../../unit7/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1208,7 +1413,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit8/" class="md-nav__link ">
+            <a href="../../unit8/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1263,27 +1468,165 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contenidos" class="md-nav__link">
+  <a href="#introduccion" class="md-nav__link">
     <span class="md-ellipsis">
-      Contenidos
+      Introducción
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
+  <a href="#que-es-la-refactorizacion" class="md-nav__link">
     <span class="md-ellipsis">
-      Objetivos
+      ¿Qué es la refactorización?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#recursos" class="md-nav__link">
+  <a href="#cuando-refactorizar" class="md-nav__link">
     <span class="md-ellipsis">
-      Recursos
+      ¿Cuándo refactorizar?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principios-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principios clave
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos-comunes-de-refactorizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos comunes de refactorización
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplos comunes de refactorización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renombrar-variables-y-funciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Renombrar variables y funciones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extraer-funciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Extraer funciones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-duplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Eliminar duplicación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usar-estructuras-idiomaticas-de-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Usar estructuras idiomáticas de Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#refactorizaciones-estructurales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refactorizaciones estructurales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Refactorizaciones estructurales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#separar-responsabilidades-single-responsibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Separar responsabilidades (Single Responsibility)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reemplazar-condicionales-con-polimorfismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Reemplazar condicionales con polimorfismo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herramientas-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herramientas útiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errores comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos recomendados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
     </span>
   </a>
   
@@ -1304,28 +1647,176 @@
                   
 
 
-<h1 id="unidad-3-control-de-versiones">🌿 Unidad 3: Control de Versiones</h1>
-<p>Aprende a trabajar colaborativamente y a gestionar el historial de tu código con Git y GitHub.</p>
-<h2 id="contenidos">Contenidos</h2>
+<h1 id="refactorizacion-de-codigo">Refactorización de Código</h1>
+<p><img src="../images/refactor.png" alt="Banner del Curso" width="800" ></p>
+<h2 id="introduccion">Introducción</h2>
+<p>A medida que el software crece, el código tiende a volverse más complejo, repetitivo o difícil de mantener. <strong>Refactorizar</strong> es el proceso de reestructurar ese código —mejorando su legibilidad y diseño interno— <strong>sin modificar su comportamiento externo</strong>.</p>
+<p>Refactorizar no es algo que se hace solo al final de un proyecto: es una práctica continua que distingue al desarrollador profesional. Este capítulo presenta los principios, técnicas y patrones comunes de refactorización en Python.</p>
+<hr />
+<h2 id="que-es-la-refactorizacion">¿Qué es la refactorización?</h2>
+<p>La <strong>refactorización</strong> consiste en cambiar la estructura del código para que sea más limpio, comprensible y mantenible, <strong>sin alterar lo que hace</strong>. Es como reorganizar una habitación: todo sigue estando allí, pero es más fácil de usar.</p>
+<blockquote>
+<p>💡 Refactorizar no es optimizar. Optimizar busca rendimiento. Refactorizar busca claridad.</p>
+</blockquote>
+<hr />
+<h2 id="cuando-refactorizar">¿Cuándo refactorizar?</h2>
 <ul>
-<li>Git: flujo de trabajo, ramas y commits</li>
-<li>Gitignore y limpieza del repositorio</li>
-<li>GitHub: colaboración y gestión de repositorios</li>
-<li>Licencias de software</li>
+<li>Antes de agregar nuevas funcionalidades</li>
+<li>Cuando detectas duplicación de código</li>
+<li>Al ver funciones/clases demasiado largas o acopladas</li>
+<li>Cuando otros no pueden entender tu código sin ayuda</li>
+<li>Como parte del ciclo: <em>escribe – prueba – refactoriza</em></li>
 </ul>
-<h2 id="objetivos">Objetivos</h2>
+<hr />
+<h2 id="principios-clave">Principios clave</h2>
 <ul>
-<li>Usar Git de forma profesional.</li>
-<li>Configurar repositorios limpios y colaborativos.</li>
-<li>Entender el impacto legal de las licencias.</li>
+<li>🔁 <strong>Pequeños pasos</strong>: haz cambios incrementales, fáciles de testear.</li>
+<li>🧪 <strong>Red de seguridad</strong>: asegúrate de tener pruebas automatizadas.</li>
+<li>🧠 <strong>Mantén la intención clara</strong>: el código debe ser más legible después de refactorizar.</li>
+<li>✋ <strong>No refactorices mientras implementas funcionalidades nuevas.</strong></li>
 </ul>
-<h2 id="recursos">Recursos</h2>
+<hr />
+<h2 id="ejemplos-comunes-de-refactorizacion">Ejemplos comunes de refactorización</h2>
+<h3 id="renombrar-variables-y-funciones">✅ Renombrar variables y funciones</h3>
+<p>❌ Antes:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calc</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
+</code></pre></div>
+<p>✅ Después:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calcular_area</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">altura</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">base</span> <span class="o">*</span> <span class="n">altura</span>
+</code></pre></div>
+<hr />
+<h3 id="extraer-funciones">✅ Extraer funciones</h3>
+<p>Cuando una función hace muchas cosas, sepárala en partes más claras:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">procesar_usuario</span><span class="p">(</span><span class="n">usuario</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">usuario</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;activo&quot;</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Inactivo&quot;</span>
+    <span class="n">enviar_bienvenida</span><span class="p">(</span><span class="n">usuario</span><span class="p">[</span><span class="s2">&quot;email&quot;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="s2">&quot;Activo&quot;</span>
+</code></pre></div>
+<p>Separado:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">es_activo</span><span class="p">(</span><span class="n">usuario</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">usuario</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;activo&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">enviar_bienvenida</span><span class="p">(</span><span class="n">email</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Correo enviado a </span><span class="si">{</span><span class="n">email</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">procesar_usuario</span><span class="p">(</span><span class="n">usuario</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">es_activo</span><span class="p">(</span><span class="n">usuario</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Inactivo&quot;</span>
+    <span class="n">enviar_bienvenida</span><span class="p">(</span><span class="n">usuario</span><span class="p">[</span><span class="s2">&quot;email&quot;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="s2">&quot;Activo&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="eliminar-duplicacion">✅ Eliminar duplicación</h3>
+<p>Antes:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">area_rectangulo</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">altura</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">base</span> <span class="o">*</span> <span class="n">altura</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">area_paralelogramo</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">altura</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">base</span> <span class="o">*</span> <span class="n">altura</span>
+</code></pre></div>
+<p>Después:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calcular_area</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">altura</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">base</span> <span class="o">*</span> <span class="n">altura</span>
+</code></pre></div>
+<hr />
+<h3 id="usar-estructuras-idiomaticas-de-python">✅ Usar estructuras idiomáticas de Python</h3>
+<p>Antes:</p>
+<div class="highlight"><pre><span></span><code><span class="n">valores</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">datos</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">valores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+<p>Después:</p>
+<div class="highlight"><pre><span></span><code><span class="n">valores</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">datos</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
+</code></pre></div>
+<hr />
+<h2 id="refactorizaciones-estructurales">Refactorizaciones estructurales</h2>
+<h3 id="separar-responsabilidades-single-responsibility">🔹 Separar responsabilidades (Single Responsibility)</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Factura</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">calcular_total</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="o">...</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">exportar_pdf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="o">...</span>  <span class="c1"># ❌ mezcla lógica de presentación</span>
+</code></pre></div>
+<p>✅ Refactorizado:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Factura</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">calcular_total</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="o">...</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ExportadorFacturaPDF</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">exportar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">factura</span><span class="p">:</span> <span class="n">Factura</span><span class="p">):</span> <span class="o">...</span>
+</code></pre></div>
+<hr />
+<h3 id="reemplazar-condicionales-con-polimorfismo">🔹 Reemplazar condicionales con polimorfismo</h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calcular_total</span><span class="p">(</span><span class="n">tipo</span><span class="p">,</span> <span class="n">monto</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">tipo</span> <span class="o">==</span> <span class="s2">&quot;normal&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">monto</span>
+    <span class="k">elif</span> <span class="n">tipo</span> <span class="o">==</span> <span class="s2">&quot;descuento&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">monto</span> <span class="o">*</span> <span class="mf">0.9</span>
+</code></pre></div>
+<p>✅ Refactorizado:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">EstrategiaPrecio</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">calcular</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">monto</span><span class="p">):</span> <span class="o">...</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Normal</span><span class="p">(</span><span class="n">EstrategiaPrecio</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">calcular</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">monto</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">monto</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ConDescuento</span><span class="p">(</span><span class="n">EstrategiaPrecio</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">calcular</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">monto</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">monto</span> <span class="o">*</span> <span class="mf">0.9</span>
+</code></pre></div>
+<hr />
+<h2 id="herramientas-utiles">Herramientas útiles</h2>
+<table>
+<thead>
+<tr>
+<th>Herramienta</th>
+<th>Uso principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>black</code></td>
+<td>Reformatador automático</td>
+</tr>
+<tr>
+<td><code>ruff</code></td>
+<td>Linter y verificador de estilo</td>
+</tr>
+<tr>
+<td><code>pytest</code></td>
+<td>Pruebas antes/después de refactorizar</td>
+</tr>
+<tr>
+<td>IDEs (VS Code, PyCharm)</td>
+<td>Soporte para renombrar, extraer funciones, mover clases</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="buenas-practicas">Buenas prácticas</h2>
+<p>✅ Refactoriza <strong>con intención</strong>: mejora la claridad o extensibilidad<br />
+✅ Haz refactorizaciones <strong>pequeñas y reversibles</strong><br />
+✅ Usa herramientas automáticas para detectar oportunidades (<code>ruff</code>, <code>flake8</code>)<br />
+✅ Acompaña tus cambios con <strong>tests automáticos</strong></p>
+<hr />
+<h2 id="errores-comunes">Errores comunes</h2>
+<p>❌ Refactorizar sin pruebas que respalden el comportamiento<br />
+❌ Hacer refactorizaciones grandes sin revisar impacto<br />
+❌ Cambiar nombres sin propósito (confunde al equipo)<br />
+❌ Refactorizar al mismo tiempo que implementas una nueva feature</p>
+<hr />
+<h2 id="recursos-recomendados">Recursos recomendados</h2>
 <ul>
-<li><a href="../git/git.md">git.md</a></li>
-<li><a href="../git/gitignore.md">gitignore.md</a></li>
-<li><a href="../git/github.md">github.md</a></li>
-<li><a href="../git/licensing.md">licensing.md</a></li>
-</ul><style type="text/css">.quiz {
+<li>📘 <a href="https://refactoring.com/">Refactoring (Martin Fowler)</a></li>
+<li>🧰 <a href="https://github.com/isidentical/refactor">Python Refactoring Toolkit (GitHub)</a></li>
+<li>🐍 [Clean Code – Robert C. Martin]</li>
+<li>🧪 <a href="https://docs.pytest.org/">pytest</a> + <a href="https://black.readthedocs.io/">black</a> + <a href="https://docs.astral.sh/ruff/">ruff</a></li>
+</ul>
+<hr />
+<h2 id="conclusion">Conclusión</h2>
+<p>Refactorizar no es una acción puntual, sino una práctica continua del desarrollo profesional. Mejora la salud del código, reduce el riesgo de errores y facilita que tu software pueda evolucionar con el tiempo. Al dominar la refactorización, conviertes código frágil en estructuras sólidas y adaptables.</p><style type="text/css">.quiz {
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem 0;
@@ -1467,7 +1958,7 @@ function resetFieldset(fieldset) {
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="../unit2/structure/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Estructura de Proyectos">
+          <a href="../design_pattern/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Patrones de Diseño">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1477,20 +1968,20 @@ function resetFieldset(fieldset) {
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Estructura de Proyectos
+                Patrones de Diseño
               </div>
             </div>
           </a>
         
         
           
-          <a href="../unit4/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: ⚙️ Unidad 4: Entornos y Dependencias">
+          <a href="../structure/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Estructura de Proyectos">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                ⚙️ Unidad 4: Entornos y Dependencias
+                Estructura de Proyectos
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1594,12 +2085,12 @@ function resetFieldset(fieldset) {
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

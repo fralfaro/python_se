@@ -10,28 +10,28 @@
         <meta name="author" content="Francisco Alfaro">
       
       
-        <link rel="canonical" href="https://github.com/fralfaro/python_se/unit3/">
+        <link rel="canonical" href="https://github.com/fralfaro/python_se/unit1/typing/">
       
       
-        <link rel="prev" href="../unit2/structure/">
+        <link rel="prev" href="../classes/">
       
       
-        <link rel="next" href="../unit4/">
+        <link rel="next" href="../pydantic/">
       
       
-      <link rel="icon" href="../images/icon.png">
+      <link rel="icon" href="../../images/icon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.25">
     
     
       
-        <title>🌿 Unidad 3: Control de Versiones - Python Software Engineering</title>
+        <title>Tipado moderno - Typing - Python Software Engineering</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../css/neoteroi-mkdocs.css">
+      <link rel="stylesheet" href="../../css/neoteroi-mkdocs.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unidad-3-control-de-versiones" class="md-skip">
+        <a href="#tipado-moderno-typing" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -92,9 +92,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href=".." title="Python Software Engineering" class="md-header__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
+    <a href="../.." title="Python Software Engineering" class="md-header__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
       
-  <img src="../images/python.svg" alt="logo">
+  <img src="../../images/python.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🌿 Unidad 3: Control de Versiones
+              Tipado moderno - Typing
             
           </span>
         </div>
@@ -222,7 +222,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -238,11 +238,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../unit1/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -262,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit2/" class="md-tabs__link">
+        <a href="../../unit2/" class="md-tabs__link">
           
   
     
@@ -278,13 +280,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../unit3/" class="md-tabs__link">
           
   
     
@@ -304,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit4/" class="md-tabs__link">
+        <a href="../../unit4/" class="md-tabs__link">
           
   
     
@@ -324,7 +324,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit5/" class="md-tabs__link">
+        <a href="../../unit5/" class="md-tabs__link">
           
   
     
@@ -344,7 +344,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit6/" class="md-tabs__link">
+        <a href="../../unit6/" class="md-tabs__link">
           
   
     
@@ -364,7 +364,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit7/" class="md-tabs__link">
+        <a href="../../unit7/" class="md-tabs__link">
           
   
     
@@ -384,7 +384,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit8/" class="md-tabs__link">
+        <a href="../../unit8/" class="md-tabs__link">
           
   
     
@@ -419,9 +419,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Python Software Engineering" class="md-nav__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
+    <a href="../.." title="Python Software Engineering" class="md-nav__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
       
-  <img src="../images/python.svg" alt="logo">
+  <img src="../../images/python.svg" alt="logo">
 
     </a>
     Python Software Engineering
@@ -469,7 +469,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -501,6 +501,8 @@
       
   
   
+    
+  
   
   
     
@@ -529,19 +531,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit1/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -552,13 +557,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 1
@@ -574,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pep/" class="md-nav__link">
+      <a href="../pep/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/scripts/" class="md-nav__link">
+      <a href="../scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -616,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/paradigm/" class="md-nav__link">
+      <a href="../paradigm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -637,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/function/" class="md-nav__link">
+      <a href="../function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -658,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/classes/" class="md-nav__link">
+      <a href="../classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -676,10 +681,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../unit1/typing/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Tipado moderno - Typing
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -688,6 +713,230 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-el-tipado-estatico" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es el tipado estático?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintaxis-basica-de-anotaciones-de-tipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sintaxis básica de anotaciones de tipo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sintaxis básica de anotaciones de tipo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funciones-con-anotaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funciones con anotaciones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-con-anotaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables con anotaciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos comunes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos comunes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anotaciones-avanzadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anotaciones avanzadas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anotaciones avanzadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-union-y-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Union y Optional
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-any-y-literal" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Any y Literal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-typeddict-newtype-typealias" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. TypedDict, NewType, TypeAlias
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipado-en-colecciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipado en colecciones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-con-mypy-y-otros-analizadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso con mypy y otros analizadores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Uso con mypy y otros analizadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-mypy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de mypy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-analisis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo de análisis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternativas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternativas:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errores comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias útiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -700,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pydantic/" class="md-nav__link">
+      <a href="../pydantic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -721,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pythonic/" class="md-nav__link">
+      <a href="../pythonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -778,7 +1027,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit2/" class="md-nav__link ">
+            <a href="../../unit2/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -811,7 +1060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/solid/" class="md-nav__link">
+      <a href="../../unit2/solid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -832,7 +1081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/design_pattern/" class="md-nav__link">
+      <a href="../../unit2/design_pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -853,7 +1102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/refactoring/" class="md-nav__link">
+      <a href="../../unit2/refactoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -874,7 +1123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/structure/" class="md-nav__link">
+      <a href="../../unit2/structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,8 +1148,6 @@
       
   
   
-    
-  
   
   
     
@@ -913,22 +1160,19 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../unit3/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -940,7 +1184,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 3
@@ -984,7 +1228,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit4/" class="md-nav__link ">
+            <a href="../../unit4/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1040,7 +1284,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit5/" class="md-nav__link ">
+            <a href="../../unit5/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1096,7 +1340,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit6/" class="md-nav__link ">
+            <a href="../../unit6/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1152,7 +1396,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit7/" class="md-nav__link ">
+            <a href="../../unit7/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1208,7 +1452,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit8/" class="md-nav__link ">
+            <a href="../../unit8/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1263,27 +1507,204 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contenidos" class="md-nav__link">
+  <a href="#introduccion" class="md-nav__link">
     <span class="md-ellipsis">
-      Contenidos
+      Introducción
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
+  <a href="#que-es-el-tipado-estatico" class="md-nav__link">
     <span class="md-ellipsis">
-      Objetivos
+      ¿Qué es el tipado estático?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#recursos" class="md-nav__link">
+  <a href="#sintaxis-basica-de-anotaciones-de-tipo" class="md-nav__link">
     <span class="md-ellipsis">
-      Recursos
+      Sintaxis básica de anotaciones de tipo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sintaxis básica de anotaciones de tipo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#funciones-con-anotaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funciones con anotaciones
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-con-anotaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables con anotaciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos comunes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos comunes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anotaciones-avanzadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Anotaciones avanzadas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anotaciones avanzadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-union-y-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Union y Optional
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-any-y-literal" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Any y Literal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-typeddict-newtype-typealias" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. TypedDict, NewType, TypeAlias
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipado-en-colecciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipado en colecciones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-con-mypy-y-otros-analizadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso con mypy y otros analizadores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Uso con mypy y otros analizadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-mypy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de mypy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-analisis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo de análisis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternativas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternativas:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errores comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias útiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
     </span>
   </a>
   
@@ -1304,28 +1725,159 @@
                   
 
 
-<h1 id="unidad-3-control-de-versiones">🌿 Unidad 3: Control de Versiones</h1>
-<p>Aprende a trabajar colaborativamente y a gestionar el historial de tu código con Git y GitHub.</p>
-<h2 id="contenidos">Contenidos</h2>
+<h1 id="tipado-moderno-typing">Tipado moderno - Typing</h1>
+<p><img src="../images/typing.png" alt="Banner del Curso" width="600" ></p>
+<h2 id="introduccion">Introducción</h2>
+<p>Aunque Python es un lenguaje de tipado dinámico, desde la versión 3.5 ha incorporado soporte para <strong>tipado estático</strong> mediante <em>type hints</em>. Esta funcionalidad permite a los desarrolladores declarar los tipos de variables, argumentos y retornos de funciones, lo cual mejora la legibilidad del código y permite la detección temprana de errores mediante herramientas externas.</p>
+<p>En este capítulo aprenderás a usar anotaciones de tipo de forma práctica y progresiva, entendiendo su utilidad, sintaxis, beneficios y cómo integrarlas con herramientas como <code>mypy</code> y <code>Pyright</code>.</p>
+<hr />
+<h2 id="que-es-el-tipado-estatico">¿Qué es el tipado estático?</h2>
+<p>El <strong>tipado estático</strong> consiste en declarar los tipos de variables y funciones para que puedan ser verificados antes de ejecutar el código. En Python, esto es completamente <strong>opcional</strong>, pero se ha convertido en una práctica común en proyectos profesionales.</p>
+<p>Python sigue siendo dinámico en tiempo de ejecución, pero con <strong>type hints</strong> puedes aplicar análisis estático con herramientas externas.</p>
+<hr />
+<h2 id="sintaxis-basica-de-anotaciones-de-tipo">Sintaxis básica de anotaciones de tipo</h2>
+<h3 id="funciones-con-anotaciones">Funciones con anotaciones</h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<h3 id="variables-con-anotaciones">Variables con anotaciones</h3>
+<div class="highlight"><pre><span></span><code><span class="n">edad</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">es_activo</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+</code></pre></div>
+<blockquote>
+<p>✅ Estas anotaciones no afectan la ejecución del programa, pero permiten a linters y editores ofrecer mejores sugerencias y validaciones.</p>
+</blockquote>
+<hr />
+<h2 id="tipos-comunes">Tipos comunes</h2>
+<table>
+<thead>
+<tr>
+<th>Tipo Python</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>int</code></td>
+<td>Números enteros</td>
+</tr>
+<tr>
+<td><code>float</code></td>
+<td>Números decimales</td>
+</tr>
+<tr>
+<td><code>str</code></td>
+<td>Cadenas de texto</td>
+</tr>
+<tr>
+<td><code>bool</code></td>
+<td>Booleanos (<code>True</code>, <code>False</code>)</td>
+</tr>
+<tr>
+<td><code>list[str]</code></td>
+<td>Lista de cadenas</td>
+</tr>
+<tr>
+<td><code>dict[str, int]</code></td>
+<td>Diccionario con claves <code>str</code> y valores <code>int</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ejemplo">Ejemplo</h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">obtener_edades</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;Ana&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;Luis&quot;</span><span class="p">:</span> <span class="mi">32</span><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="anotaciones-avanzadas">Anotaciones avanzadas</h2>
+<h3 id="1-union-y-optional">1. <code>Union</code> y <code>Optional</code></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Optional</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">procesar</span><span class="p">(</span><span class="n">valor</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">valor</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">buscar</span><span class="p">(</span><span class="nb">id</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+    <span class="k">return</span> <span class="s2">&quot;dato&quot;</span> <span class="k">if</span> <span class="nb">id</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="kc">None</span>
+</code></pre></div>
 <ul>
-<li>Git: flujo de trabajo, ramas y commits</li>
-<li>Gitignore y limpieza del repositorio</li>
-<li>GitHub: colaboración y gestión de repositorios</li>
-<li>Licencias de software</li>
+<li><code>Union[int, str]</code>: acepta uno u otro.</li>
+<li><code>Optional[str]</code>: igual a <code>Union[str, None]</code>.</li>
 </ul>
-<h2 id="objetivos">Objetivos</h2>
+<hr />
+<h3 id="2-any-y-literal">2. <code>Any</code> y <code>Literal</code></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Literal</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">debug</span><span class="p">(</span><span class="n">valor</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">valor</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">set_estado</span><span class="p">(</span><span class="n">estado</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;activo&quot;</span><span class="p">,</span> <span class="s2">&quot;inactivo&quot;</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">pass</span>
+</code></pre></div>
 <ul>
-<li>Usar Git de forma profesional.</li>
-<li>Configurar repositorios limpios y colaborativos.</li>
-<li>Entender el impacto legal de las licencias.</li>
+<li><code>Any</code>: desactiva el chequeo de tipos.</li>
+<li><code>Literal</code>: restringe a valores específicos.</li>
 </ul>
-<h2 id="recursos">Recursos</h2>
+<hr />
+<h3 id="3-typeddict-newtype-typealias">3. <code>TypedDict</code>, <code>NewType</code>, <code>TypeAlias</code></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">TypedDict</span><span class="p">,</span> <span class="n">NewType</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Usuario</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+    <span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">edad</span><span class="p">:</span> <span class="nb">int</span>
+
+<span class="n">UserID</span> <span class="o">=</span> <span class="n">NewType</span><span class="p">(</span><span class="s2">&quot;UserID&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+</code></pre></div>
 <ul>
-<li><a href="../git/git.md">git.md</a></li>
-<li><a href="../git/gitignore.md">gitignore.md</a></li>
-<li><a href="../git/github.md">github.md</a></li>
-<li><a href="../git/licensing.md">licensing.md</a></li>
-</ul><style type="text/css">.quiz {
+<li><code>TypedDict</code>: estructuras con forma de diccionarios.</li>
+<li><code>NewType</code>: define nuevos identificadores de tipo.</li>
+</ul>
+<hr />
+<h2 id="tipado-en-colecciones">Tipado en colecciones</h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">Dict</span>
+
+<span class="n">nombres</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span> <span class="s2">&quot;Luis&quot;</span><span class="p">]</span>
+<span class="n">coordenadas</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mf">33.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">70.6</span><span class="p">)</span>
+<span class="n">personas</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Ana&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;Luis&quot;</span><span class="p">:</span> <span class="mi">32</span><span class="p">}</span>
+</code></pre></div>
+<blockquote>
+<p>A partir de Python 3.9 se puede usar la sintaxis corta: <code>list[str]</code>, <code>tuple[str, int]</code>.</p>
+</blockquote>
+<hr />
+<h2 id="uso-con-mypy-y-otros-analizadores">Uso con <code>mypy</code> y otros analizadores</h2>
+<h3 id="instalacion-de-mypy">Instalación de <code>mypy</code></h3>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mypy
+</code></pre></div>
+<h3 id="ejemplo-de-analisis">Ejemplo de análisis</h3>
+<div class="highlight"><pre><span></span><code>mypy<span class="w"> </span>archivo.py
+</code></pre></div>
+<p>Esto revisará si las anotaciones son coherentes con el uso del código. También puedes integrarlo en tu CI/CD.</p>
+<h3 id="alternativas">Alternativas:</h3>
+<ul>
+<li><code>pyright</code>: analizador rápido desarrollado por Microsoft (VS Code).</li>
+<li><code>pyre</code>: analizador de tipos estático creado por Meta.</li>
+</ul>
+<hr />
+<h2 id="buenas-practicas">Buenas prácticas</h2>
+<p>✅ Añade anotaciones especialmente en funciones públicas o de librerías<br />
+✅ Usa <code>Optional</code> y <code>Union</code> para modelar correctamente entradas flexibles<br />
+✅ Prefiere <code>list[int]</code> sobre <code>List[int]</code> si usas Python ≥ 3.9<br />
+✅ Acompaña el tipado con herramientas como <code>mypy</code> o <code>ruff check</code>  </p>
+<hr />
+<h2 id="errores-comunes">Errores comunes</h2>
+<p>❌ Pensar que las anotaciones obligan el tipo en tiempo de ejecución<br />
+❌ Usar <code>Any</code> en exceso (pierde valor el análisis)<br />
+❌ Ignorar advertencias de <code>mypy</code> sin analizarlas<br />
+❌ Mezclar anotaciones incompletas con funciones complejas</p>
+<hr />
+<h2 id="referencias-utiles">Referencias útiles</h2>
+<ul>
+<li>📘 <a href="https://peps.python.org/pep-0484/">PEP 484 – Type Hints</a></li>
+<li>🧰 <a href="https://docs.python.org/3/library/typing.html">Typing – Módulo oficial</a></li>
+<li>📚 <a href="https://mypy.readthedocs.io/en/stable/">mypy – Documentación oficial</a></li>
+<li>🚀 <a href="https://github.com/microsoft/pyright">pyright – Type Checker para Python</a></li>
+</ul>
+<hr />
+<h2 id="conclusion">Conclusión</h2>
+<p>El tipado estático en Python no es obligatorio, pero su adopción ha demostrado ser un recurso valioso para detectar errores antes de ejecutar el código, mejorar la documentación implícita y facilitar la colaboración en equipos. Usar <code>typing</code> junto con herramientas de análisis convierte tu código en una fuente más confiable y robusta, sin sacrificar la flexibilidad que caracteriza a Python.</p><style type="text/css">.quiz {
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem 0;
@@ -1467,7 +2019,7 @@ function resetFieldset(fieldset) {
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="../unit2/structure/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Estructura de Proyectos">
+          <a href="../classes/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Clases en Python">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1477,20 +2029,20 @@ function resetFieldset(fieldset) {
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Estructura de Proyectos
+                Clases en Python
               </div>
             </div>
           </a>
         
         
           
-          <a href="../unit4/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: ⚙️ Unidad 4: Entornos y Dependencias">
+          <a href="../pydantic/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Validación moderna - Pydantic">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                ⚙️ Unidad 4: Entornos y Dependencias
+                Validación moderna - Pydantic
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1594,12 +2146,12 @@ function resetFieldset(fieldset) {
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

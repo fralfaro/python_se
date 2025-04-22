@@ -10,28 +10,28 @@
         <meta name="author" content="Francisco Alfaro">
       
       
-        <link rel="canonical" href="https://github.com/fralfaro/python_se/unit3/">
+        <link rel="canonical" href="https://github.com/fralfaro/python_se/unit1/classes/">
       
       
-        <link rel="prev" href="../unit2/structure/">
+        <link rel="prev" href="../function/">
       
       
-        <link rel="next" href="../unit4/">
+        <link rel="next" href="../typing/">
       
       
-      <link rel="icon" href="../images/icon.png">
+      <link rel="icon" href="../../images/icon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.25">
     
     
       
-        <title>🌿 Unidad 3: Control de Versiones - Python Software Engineering</title>
+        <title>Clases en Python - Python Software Engineering</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../css/neoteroi-mkdocs.css">
+      <link rel="stylesheet" href="../../css/neoteroi-mkdocs.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unidad-3-control-de-versiones" class="md-skip">
+        <a href="#clases-en-python" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -92,9 +92,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href=".." title="Python Software Engineering" class="md-header__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
+    <a href="../.." title="Python Software Engineering" class="md-header__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
       
-  <img src="../images/python.svg" alt="logo">
+  <img src="../../images/python.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🌿 Unidad 3: Control de Versiones
+              Clases en Python
             
           </span>
         </div>
@@ -222,7 +222,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -238,11 +238,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../unit1/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -262,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit2/" class="md-tabs__link">
+        <a href="../../unit2/" class="md-tabs__link">
           
   
     
@@ -278,13 +280,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../unit3/" class="md-tabs__link">
           
   
     
@@ -304,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit4/" class="md-tabs__link">
+        <a href="../../unit4/" class="md-tabs__link">
           
   
     
@@ -324,7 +324,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit5/" class="md-tabs__link">
+        <a href="../../unit5/" class="md-tabs__link">
           
   
     
@@ -344,7 +344,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit6/" class="md-tabs__link">
+        <a href="../../unit6/" class="md-tabs__link">
           
   
     
@@ -364,7 +364,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit7/" class="md-tabs__link">
+        <a href="../../unit7/" class="md-tabs__link">
           
   
     
@@ -384,7 +384,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit8/" class="md-tabs__link">
+        <a href="../../unit8/" class="md-tabs__link">
           
   
     
@@ -419,9 +419,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Python Software Engineering" class="md-nav__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
+    <a href="../.." title="Python Software Engineering" class="md-nav__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
       
-  <img src="../images/python.svg" alt="logo">
+  <img src="../../images/python.svg" alt="logo">
 
     </a>
     Python Software Engineering
@@ -469,7 +469,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -501,6 +501,8 @@
       
   
   
+    
+  
   
   
     
@@ -529,19 +531,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit1/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -552,13 +557,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 1
@@ -574,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pep/" class="md-nav__link">
+      <a href="../pep/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/scripts/" class="md-nav__link">
+      <a href="../scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -616,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/paradigm/" class="md-nav__link">
+      <a href="../paradigm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -637,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/function/" class="md-nav__link">
+      <a href="../function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -655,10 +660,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../unit1/classes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Clases en Python
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -667,6 +692,203 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-una-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es una clase?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Qué es una clase?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo simple
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-basica-de-una-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura básica de una clase
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura básica de una clase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#componentes-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes clave
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atributos-de-instancia-vs-de-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos: de instancia vs de clase
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Atributos: de instancia vs de clase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos-de-instancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos de instancia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos-de-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos de clase
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodos-especiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos especiales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodos-de-clase-y-estaticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos de clase y estáticos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Métodos de clase y estáticos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classmethod" class="md-nav__link">
+    <span class="md-ellipsis">
+      @classmethod
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staticmethod" class="md-nav__link">
+    <span class="md-ellipsis">
+      @staticmethod
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herencia-y-polimorfismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herencia y polimorfismo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errores comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos útiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -679,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/typing/" class="md-nav__link">
+      <a href="../typing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -700,7 +922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pydantic/" class="md-nav__link">
+      <a href="../pydantic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -721,7 +943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pythonic/" class="md-nav__link">
+      <a href="../pythonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -778,7 +1000,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit2/" class="md-nav__link ">
+            <a href="../../unit2/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -811,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/solid/" class="md-nav__link">
+      <a href="../../unit2/solid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -832,7 +1054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/design_pattern/" class="md-nav__link">
+      <a href="../../unit2/design_pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -853,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/refactoring/" class="md-nav__link">
+      <a href="../../unit2/refactoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -874,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/structure/" class="md-nav__link">
+      <a href="../../unit2/structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,8 +1121,6 @@
       
   
   
-    
-  
   
   
     
@@ -913,22 +1133,19 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../unit3/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -940,7 +1157,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 3
@@ -984,7 +1201,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit4/" class="md-nav__link ">
+            <a href="../../unit4/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1040,7 +1257,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit5/" class="md-nav__link ">
+            <a href="../../unit5/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1096,7 +1313,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit6/" class="md-nav__link ">
+            <a href="../../unit6/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1152,7 +1369,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit7/" class="md-nav__link ">
+            <a href="../../unit7/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1208,7 +1425,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit8/" class="md-nav__link ">
+            <a href="../../unit8/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1263,27 +1480,177 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contenidos" class="md-nav__link">
+  <a href="#introduccion" class="md-nav__link">
     <span class="md-ellipsis">
-      Contenidos
+      Introducción
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
+  <a href="#que-es-una-clase" class="md-nav__link">
     <span class="md-ellipsis">
-      Objetivos
+      ¿Qué es una clase?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Qué es una clase?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo simple
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-basica-de-una-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura básica de una clase
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura básica de una clase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#componentes-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes clave
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atributos-de-instancia-vs-de-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos: de instancia vs de clase
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Atributos: de instancia vs de clase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos-de-instancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos de instancia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributos-de-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos de clase
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodos-especiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos especiales
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#recursos" class="md-nav__link">
+  <a href="#metodos-de-clase-y-estaticos" class="md-nav__link">
     <span class="md-ellipsis">
-      Recursos
+      Métodos de clase y estáticos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Métodos de clase y estáticos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classmethod" class="md-nav__link">
+    <span class="md-ellipsis">
+      @classmethod
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#staticmethod" class="md-nav__link">
+    <span class="md-ellipsis">
+      @staticmethod
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herencia-y-polimorfismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Herencia y polimorfismo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errores comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos útiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
     </span>
   </a>
   
@@ -1304,28 +1671,158 @@
                   
 
 
-<h1 id="unidad-3-control-de-versiones">🌿 Unidad 3: Control de Versiones</h1>
-<p>Aprende a trabajar colaborativamente y a gestionar el historial de tu código con Git y GitHub.</p>
-<h2 id="contenidos">Contenidos</h2>
+<h1 id="clases-en-python">Clases en Python</h1>
+<p><img src="../images/class.svg" alt="Banner del Curso" width="800" ></p>
+<h2 id="introduccion">Introducción</h2>
+<p>La programación orientada a objetos (OOP) es un paradigma ampliamente utilizado para modelar sistemas complejos y estructurar el código en componentes reutilizables. En Python, las <strong>clases</strong> permiten encapsular datos y comportamientos relacionados en una sola entidad: el objeto.</p>
+<p>Este capítulo te introducirá a las clases en Python, cubriendo desde los conceptos fundamentales hasta prácticas avanzadas como herencia, métodos especiales y anotaciones. Verás cómo estructurar tu código de forma más mantenible, reutilizable y expresiva mediante clases.</p>
+<hr />
+<h2 id="que-es-una-clase">¿Qué es una clase?</h2>
+<p>Una <strong>clase</strong> es una plantilla para crear objetos. Define atributos (datos) y métodos (funciones) que describen el comportamiento de los objetos.</p>
+<h3 id="ejemplo-simple">Ejemplo simple</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Persona</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">saludar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hola, soy </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="si">}</span><span class="s2">&quot;</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">Persona</span><span class="p">(</span><span class="s2">&quot;Francisco&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">saludar</span><span class="p">())</span>  <span class="c1"># Hola, soy Francisco</span>
+</code></pre></div>
+<hr />
+<h2 id="estructura-basica-de-una-clase">Estructura básica de una clase</h2>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">NombreClase</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parametros</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">atributo</span> <span class="o">=</span> <span class="n">valor</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">metodo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># comportamiento</span>
+        <span class="k">pass</span>
+</code></pre></div>
+<h3 id="componentes-clave">Componentes clave</h3>
 <ul>
-<li>Git: flujo de trabajo, ramas y commits</li>
-<li>Gitignore y limpieza del repositorio</li>
-<li>GitHub: colaboración y gestión de repositorios</li>
-<li>Licencias de software</li>
+<li><code>class</code>: palabra clave para definir una clase.</li>
+<li><code>__init__</code>: método constructor, se ejecuta al crear un nuevo objeto.</li>
+<li><code>self</code>: referencia al objeto actual.</li>
+<li>Métodos: funciones definidas dentro de una clase que operan sobre sus atributos.</li>
 </ul>
-<h2 id="objetivos">Objetivos</h2>
+<hr />
+<h2 id="atributos-de-instancia-vs-de-clase">Atributos: de instancia vs de clase</h2>
+<h3 id="atributos-de-instancia">Atributos de instancia</h3>
+<p>Se definen en el constructor (<code>__init__</code>) y son únicos para cada objeto.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Vehiculo</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
+</code></pre></div>
+<h3 id="atributos-de-clase">Atributos de clase</h3>
+<p>Son compartidos por todas las instancias.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Vehiculo</span><span class="p">:</span>
+    <span class="n">ruedas</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c1"># atributo de clase</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
+</code></pre></div>
+<hr />
+<h2 id="metodos-especiales">Métodos especiales</h2>
+<p>Python permite personalizar el comportamiento de los objetos usando métodos especiales (<code>__dunder__</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__init__</code></td>
+<td>Constructor del objeto</td>
+</tr>
+<tr>
+<td><code>__str__</code></td>
+<td>Representación amigable (<code>str(obj)</code>)</td>
+</tr>
+<tr>
+<td><code>__repr__</code></td>
+<td>Representación técnica (<code>repr(obj)</code>)</td>
+</tr>
+<tr>
+<td><code>__eq__</code></td>
+<td>Comparación de igualdad (<code>==</code>)</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Producto</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">precio</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">precio</span> <span class="o">=</span> <span class="n">precio</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> - $</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">precio</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="metodos-de-clase-y-estaticos">Métodos de clase y estáticos</h2>
+<h3 id="classmethod"><code>@classmethod</code></h3>
+<p>Accede a la clase en lugar de a la instancia.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Usuario</span><span class="p">:</span>
+    <span class="n">usuarios</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+        <span class="n">Usuario</span><span class="o">.</span><span class="n">usuarios</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">total_usuarios</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">usuarios</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="staticmethod"><code>@staticmethod</code></h3>
+<p>No accede ni a la clase ni a la instancia. Es como una función normal dentro del namespace de la clase.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Calculadora</span><span class="p">:</span>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">sumar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</code></pre></div>
+<hr />
+<h2 id="herencia-y-polimorfismo">Herencia y polimorfismo</h2>
+<p>Python permite que una clase herede atributos y métodos de otra, lo que promueve la reutilización y extensión del código.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Animal</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">hablar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Hace un sonido&quot;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Perro</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">hablar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Ladra&quot;</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">Perro</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">hablar</span><span class="p">())</span>  <span class="c1"># Ladra</span>
+</code></pre></div>
+<blockquote>
+<p>🧠 Esto es polimorfismo: el mismo método (<code>hablar</code>) se comporta diferente según la clase.</p>
+</blockquote>
+<hr />
+<h2 id="buenas-practicas">Buenas prácticas</h2>
+<p>✅ Usa nombres en <code>PascalCase</code> para clases<br />
+✅ Define solo lo necesario en <code>__init__</code><br />
+✅ Añade <code>__str__</code> para una representación legible<br />
+✅ Prefiere <code>@classmethod</code> cuando necesites modificar atributos de clase<br />
+✅ Aplica herencia solo si hay una verdadera relación jerárquica</p>
+<hr />
+<h2 id="errores-comunes">Errores comunes</h2>
+<p>❌ Olvidar el uso de <code>self</code> en métodos de instancia<br />
+❌ Redefinir atributos de clase desde instancias sin intención<br />
+❌ Crear jerarquías de herencia profundas e innecesarias<br />
+❌ Sobrecargar <code>__init__</code> con demasiada lógica</p>
+<hr />
+<h2 id="recursos-utiles">Recursos útiles</h2>
 <ul>
-<li>Usar Git de forma profesional.</li>
-<li>Configurar repositorios limpios y colaborativos.</li>
-<li>Entender el impacto legal de las licencias.</li>
+<li>📘 <a href="https://docs.python.org/3/tutorial/classes.html">Clases – Tutorial oficial de Python</a></li>
+<li>🧰 <a href="https://peps.python.org/pep-0008/#class-names">PEP 8 – Nombres de clases y métodos</a></li>
+<li>📚 <em>Fluent Python</em> – Capítulos sobre clases y objetos avanzados</li>
 </ul>
-<h2 id="recursos">Recursos</h2>
-<ul>
-<li><a href="../git/git.md">git.md</a></li>
-<li><a href="../git/gitignore.md">gitignore.md</a></li>
-<li><a href="../git/github.md">github.md</a></li>
-<li><a href="../git/licensing.md">licensing.md</a></li>
-</ul><style type="text/css">.quiz {
+<hr />
+<h2 id="conclusion">Conclusión</h2>
+<p>Las clases son una herramienta poderosa en Python para modelar estructuras complejas del mundo real. Entender su sintaxis y principios te permitirá construir software más organizado, extensible y orientado a objetos.</p>
+<p>Dominar las clases es un paso fundamental hacia el desarrollo de aplicaciones robustas y bien estructuradas en Python.</p><style type="text/css">.quiz {
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem 0;
@@ -1467,7 +1964,7 @@ function resetFieldset(fieldset) {
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="../unit2/structure/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Estructura de Proyectos">
+          <a href="../function/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Funciones en Python">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1477,20 +1974,20 @@ function resetFieldset(fieldset) {
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Estructura de Proyectos
+                Funciones en Python
               </div>
             </div>
           </a>
         
         
           
-          <a href="../unit4/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: ⚙️ Unidad 4: Entornos y Dependencias">
+          <a href="../typing/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Tipado moderno - Typing">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                ⚙️ Unidad 4: Entornos y Dependencias
+                Tipado moderno - Typing
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1594,12 +2091,12 @@ function resetFieldset(fieldset) {
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

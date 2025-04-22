@@ -10,28 +10,28 @@
         <meta name="author" content="Francisco Alfaro">
       
       
-        <link rel="canonical" href="https://github.com/fralfaro/python_se/unit3/">
+        <link rel="canonical" href="https://github.com/fralfaro/python_se/unit2/solid/">
       
       
-        <link rel="prev" href="../unit2/structure/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../unit4/">
+        <link rel="next" href="../design_pattern/">
       
       
-      <link rel="icon" href="../images/icon.png">
+      <link rel="icon" href="../../images/icon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.25">
     
     
       
-        <title>🌿 Unidad 3: Control de Versiones - Python Software Engineering</title>
+        <title>Principio SOLID - Python Software Engineering</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../css/neoteroi-mkdocs.css">
+      <link rel="stylesheet" href="../../css/neoteroi-mkdocs.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unidad-3-control-de-versiones" class="md-skip">
+        <a href="#principio-solid" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -92,9 +92,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href=".." title="Python Software Engineering" class="md-header__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
+    <a href="../.." title="Python Software Engineering" class="md-header__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
       
-  <img src="../images/python.svg" alt="logo">
+  <img src="../../images/python.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🌿 Unidad 3: Control de Versiones
+              Principio SOLID
             
           </span>
         </div>
@@ -222,7 +222,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -242,32 +242,12 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit1/" class="md-tabs__link">
+        <a href="../../unit1/" class="md-tabs__link">
           
   
     
   
   📖 Unidad 1
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../unit2/" class="md-tabs__link">
-          
-  
-    
-  
-  📖 Unidad 2
 
         </a>
       </li>
@@ -284,7 +264,27 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  📖 Unidad 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../unit3/" class="md-tabs__link">
           
   
     
@@ -304,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit4/" class="md-tabs__link">
+        <a href="../../unit4/" class="md-tabs__link">
           
   
     
@@ -324,7 +324,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit5/" class="md-tabs__link">
+        <a href="../../unit5/" class="md-tabs__link">
           
   
     
@@ -344,7 +344,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit6/" class="md-tabs__link">
+        <a href="../../unit6/" class="md-tabs__link">
           
   
     
@@ -364,7 +364,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit7/" class="md-tabs__link">
+        <a href="../../unit7/" class="md-tabs__link">
           
   
     
@@ -384,7 +384,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit8/" class="md-tabs__link">
+        <a href="../../unit8/" class="md-tabs__link">
           
   
     
@@ -419,9 +419,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Python Software Engineering" class="md-nav__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
+    <a href="../.." title="Python Software Engineering" class="md-nav__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
       
-  <img src="../images/python.svg" alt="logo">
+  <img src="../../images/python.svg" alt="logo">
 
     </a>
     Python Software Engineering
@@ -469,7 +469,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -541,7 +541,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit1/" class="md-nav__link ">
+            <a href="../../unit1/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -574,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pep/" class="md-nav__link">
+      <a href="../../unit1/pep/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/scripts/" class="md-nav__link">
+      <a href="../../unit1/scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -616,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/paradigm/" class="md-nav__link">
+      <a href="../../unit1/paradigm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -637,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/function/" class="md-nav__link">
+      <a href="../../unit1/function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -658,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/classes/" class="md-nav__link">
+      <a href="../../unit1/classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -679,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/typing/" class="md-nav__link">
+      <a href="../../unit1/typing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -700,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pydantic/" class="md-nav__link">
+      <a href="../../unit1/pydantic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -721,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pythonic/" class="md-nav__link">
+      <a href="../../unit1/pythonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -746,6 +746,8 @@
       
   
   
+    
+  
   
   
     
@@ -766,19 +768,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit2/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -789,13 +794,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 2
@@ -808,10 +813,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../unit2/solid/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Principio SOLID
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -820,6 +845,245 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-significa-solid" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué significa SOLID?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-srp-principio-de-responsabilidad-unica" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. SRP – Principio de Responsabilidad Única
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. SRP – Principio de Responsabilidad Única">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-srp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ No SRP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#con-srp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Con SRP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ocp-principio-abiertocerrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. OCP – Principio Abierto/Cerrado
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. OCP – Principio Abierto/Cerrado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sin-ocp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Sin OCP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#con-ocp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Con OCP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-lsp-principio-de-sustitucion-de-liskov" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. LSP – Principio de Sustitución de Liskov
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. LSP – Principio de Sustitución de Liskov">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#violacion-lsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Violación LSP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cumplimiento-lsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Cumplimiento LSP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-isp-principio-de-segregacion-de-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. ISP – Principio de Segregación de Interfaces
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. ISP – Principio de Segregación de Interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mal-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Mal diseño
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buen-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Buen diseño
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-dip-principio-de-inversion-de-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. DIP – Principio de Inversión de Dependencias
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. DIP – Principio de Inversión de Dependencias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acoplamiento-fuerte" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Acoplamiento fuerte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inversion-de-dependencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Inversión de dependencia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas-al-aplicar-solid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas al aplicar SOLID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errores comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos recomendados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -832,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/design_pattern/" class="md-nav__link">
+      <a href="../design_pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -853,7 +1117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/refactoring/" class="md-nav__link">
+      <a href="../refactoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -874,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/structure/" class="md-nav__link">
+      <a href="../structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,8 +1163,6 @@
       
   
   
-    
-  
   
   
     
@@ -913,22 +1175,19 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../unit3/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -940,7 +1199,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 3
@@ -984,7 +1243,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit4/" class="md-nav__link ">
+            <a href="../../unit4/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1040,7 +1299,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit5/" class="md-nav__link ">
+            <a href="../../unit5/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1096,7 +1355,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit6/" class="md-nav__link ">
+            <a href="../../unit6/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1152,7 +1411,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit7/" class="md-nav__link ">
+            <a href="../../unit7/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1208,7 +1467,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit8/" class="md-nav__link ">
+            <a href="../../unit8/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1263,27 +1522,219 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contenidos" class="md-nav__link">
+  <a href="#introduccion" class="md-nav__link">
     <span class="md-ellipsis">
-      Contenidos
+      Introducción
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
+  <a href="#que-significa-solid" class="md-nav__link">
     <span class="md-ellipsis">
-      Objetivos
+      ¿Qué significa SOLID?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#recursos" class="md-nav__link">
+  <a href="#1-srp-principio-de-responsabilidad-unica" class="md-nav__link">
     <span class="md-ellipsis">
-      Recursos
+      1. SRP – Principio de Responsabilidad Única
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. SRP – Principio de Responsabilidad Única">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-srp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ No SRP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#con-srp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Con SRP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ocp-principio-abiertocerrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. OCP – Principio Abierto/Cerrado
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. OCP – Principio Abierto/Cerrado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sin-ocp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Sin OCP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#con-ocp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Con OCP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-lsp-principio-de-sustitucion-de-liskov" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. LSP – Principio de Sustitución de Liskov
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. LSP – Principio de Sustitución de Liskov">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#violacion-lsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Violación LSP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cumplimiento-lsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Cumplimiento LSP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-isp-principio-de-segregacion-de-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. ISP – Principio de Segregación de Interfaces
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. ISP – Principio de Segregación de Interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mal-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Mal diseño
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buen-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Buen diseño
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-dip-principio-de-inversion-de-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. DIP – Principio de Inversión de Dependencias
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. DIP – Principio de Inversión de Dependencias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acoplamiento-fuerte" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Acoplamiento fuerte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inversion-de-dependencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Inversión de dependencia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas-al-aplicar-solid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas al aplicar SOLID
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errores comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos recomendados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
     </span>
   </a>
   
@@ -1304,28 +1755,201 @@
                   
 
 
-<h1 id="unidad-3-control-de-versiones">🌿 Unidad 3: Control de Versiones</h1>
-<p>Aprende a trabajar colaborativamente y a gestionar el historial de tu código con Git y GitHub.</p>
-<h2 id="contenidos">Contenidos</h2>
+<h1 id="principio-solid">Principio SOLID</h1>
+<p><img src="../images/solid.png" alt="Banner del Curso" width="600" ></p>
+<h2 id="introduccion">Introducción</h2>
+<p>Los principios <strong>SOLID</strong> son cinco directrices fundamentales del diseño orientado a objetos, formuladas para escribir software que sea <strong>fácil de entender, mantener y escalar</strong>. Aunque surgieron en lenguajes como C++ y Java, se aplican perfectamente a Python y son una base clave del diseño profesional de software.</p>
+<p>Este capítulo presenta los principios SOLID con ejemplos concretos en Python, buenas prácticas y advertencias sobre errores comunes.</p>
+<hr />
+<h2 id="que-significa-solid">¿Qué significa SOLID?</h2>
+<p>Cada letra representa un principio:</p>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Nombre</th>
+<th>Descripción breve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S</td>
+<td>Single Responsibility Principle (SRP)</td>
+<td>Una clase debe tener una sola razón para cambiar.</td>
+</tr>
+<tr>
+<td>O</td>
+<td>Open/Closed Principle (OCP)</td>
+<td>El código debe estar abierto a extensión, cerrado a modificación.</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Liskov Substitution Principle (LSP)</td>
+<td>Las subclases deben poder reemplazar a sus superclases.</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Interface Segregation Principle (ISP)</td>
+<td>No forzar a los objetos a implementar métodos que no usan.</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Dependency Inversion Principle (DIP)</td>
+<td>Depender de abstracciones, no de implementaciones concretas.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-srp-principio-de-responsabilidad-unica">1. SRP – Principio de Responsabilidad Única</h2>
+<blockquote>
+<p>"Una clase debe tener una sola razón para cambiar."</p>
+</blockquote>
+<h3 id="no-srp">❌ No SRP</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Reporte</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">generar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># lógica de negocio</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">exportar_pdf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># lógica de presentación</span>
+        <span class="k">pass</span>
+</code></pre></div>
+<p>Esta clase mezcla lógica de negocio con lógica de presentación.</p>
+<h3 id="con-srp">✅ Con SRP</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Reporte</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">generar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;contenido&quot;</span><span class="p">:</span> <span class="s2">&quot;datos&quot;</span><span class="p">}</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ExportadorPDF</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">exportar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Exportando PDF:&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="2-ocp-principio-abiertocerrado">2. OCP – Principio Abierto/Cerrado</h2>
+<blockquote>
+<p>"El código debe estar abierto a extensión, pero cerrado a modificación."</p>
+</blockquote>
+<h3 id="sin-ocp">❌ Sin OCP</h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calcular_precio</span><span class="p">(</span><span class="n">producto</span><span class="p">,</span> <span class="n">tipo</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">tipo</span> <span class="o">==</span> <span class="s2">&quot;normal&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">producto</span><span class="o">.</span><span class="n">precio</span>
+    <span class="k">elif</span> <span class="n">tipo</span> <span class="o">==</span> <span class="s2">&quot;descuento&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">producto</span><span class="o">.</span><span class="n">precio</span> <span class="o">*</span> <span class="mf">0.9</span>
+</code></pre></div>
+<p>Cada nuevo tipo rompe el código existente.</p>
+<h3 id="con-ocp">✅ Con OCP</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">EstrategiaPrecio</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">calcular</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">producto</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">PrecioNormal</span><span class="p">(</span><span class="n">EstrategiaPrecio</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">calcular</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">producto</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">producto</span><span class="o">.</span><span class="n">precio</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">PrecioConDescuento</span><span class="p">(</span><span class="n">EstrategiaPrecio</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">calcular</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">producto</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">producto</span><span class="o">.</span><span class="n">precio</span> <span class="o">*</span> <span class="mf">0.9</span>
+</code></pre></div>
+<hr />
+<h2 id="3-lsp-principio-de-sustitucion-de-liskov">3. LSP – Principio de Sustitución de Liskov</h2>
+<blockquote>
+<p>"Las subclases deben ser sustituibles por sus superclases sin romper el programa."</p>
+</blockquote>
+<h3 id="violacion-lsp">❌ Violación LSP</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Pato</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">volar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;vuela&quot;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">PatoDeGoma</span><span class="p">(</span><span class="n">Pato</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">volar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;¡No puede volar!&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="cumplimiento-lsp">✅ Cumplimiento LSP</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Ave</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">hacer_sonido</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Pato</span><span class="p">(</span><span class="n">Ave</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">hacer_sonido</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;cuac&quot;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">PatoDeGoma</span><span class="p">(</span><span class="n">Ave</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">hacer_sonido</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;chirriido&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="4-isp-principio-de-segregacion-de-interfaces">4. ISP – Principio de Segregación de Interfaces</h2>
+<blockquote>
+<p>"Una clase no debe estar obligada a implementar métodos que no necesita."</p>
+</blockquote>
+<p>Python no tiene interfaces explícitas, pero este principio se aplica en <strong>diseño de clases y herencias</strong>.</p>
+<h3 id="mal-diseno">❌ Mal diseño</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Animal</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">volar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="o">...</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">nadar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="o">...</span>
+</code></pre></div>
+<p>No todos los animales hacen ambas cosas.</p>
+<h3 id="buen-diseno">✅ Buen diseño</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">PuedeNadar</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">nadar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="o">...</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">PuedeVolar</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">volar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="o">...</span>
+</code></pre></div>
+<p>Cada clase implementa solo lo que necesita.</p>
+<hr />
+<h2 id="5-dip-principio-de-inversion-de-dependencias">5. DIP – Principio de Inversión de Dependencias</h2>
+<blockquote>
+<p>"Depende de abstracciones, no de implementaciones concretas."</p>
+</blockquote>
+<h3 id="acoplamiento-fuerte">❌ Acoplamiento fuerte</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ServicioCorreo</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">enviar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mensaje</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Enviando correo:&quot;</span><span class="p">,</span> <span class="n">mensaje</span><span class="p">)</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Notificador</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">correo</span> <span class="o">=</span> <span class="n">ServicioCorreo</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="inversion-de-dependencia">✅ Inversión de dependencia</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">CanalNotificacion</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">enviar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mensaje</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ServicioCorreo</span><span class="p">(</span><span class="n">CanalNotificacion</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">enviar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mensaje</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correo:&quot;</span><span class="p">,</span> <span class="n">mensaje</span><span class="p">)</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Notificador</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">canal</span><span class="p">:</span> <span class="n">CanalNotificacion</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canal</span> <span class="o">=</span> <span class="n">canal</span>
+</code></pre></div>
+<p>Esto permite inyectar diferentes canales sin cambiar la clase <code>Notificador</code>.</p>
+<hr />
+<h2 id="buenas-practicas-al-aplicar-solid">Buenas prácticas al aplicar SOLID</h2>
+<p>✅ Refactoriza clases grandes en responsabilidades más pequeñas<br />
+✅ Usa composición y estrategias para evitar condicionales<br />
+✅ Evita herencias innecesarias: prefiere interfaces y protocolos (composición &gt; herencia)<br />
+✅ Añade tests para validar comportamiento antes y después de aplicar SOLID<br />
+✅ En Python 3.8+, puedes usar <code>Protocol</code> de <code>typing</code> como forma ligera de interfaces</p>
+<hr />
+<h2 id="errores-comunes">Errores comunes</h2>
+<p>❌ Aplicar todos los principios de forma rígida desde el día uno<br />
+❌ Crear clases o jerarquías complejas sin necesidad real<br />
+❌ No validar si la refactorización realmente mejora el diseño<br />
+❌ Confundir "extensibilidad" con "generalización excesiva"</p>
+<hr />
+<h2 id="recursos-recomendados">Recursos recomendados</h2>
 <ul>
-<li>Git: flujo de trabajo, ramas y commits</li>
-<li>Gitignore y limpieza del repositorio</li>
-<li>GitHub: colaboración y gestión de repositorios</li>
-<li>Licencias de software</li>
+<li>📘 <a href="https://en.wikipedia.org/wiki/SOLID">The Principles of OOP – SOLID</a></li>
+<li>📚 <em>Clean Architecture</em> – Robert C. Martin</li>
+<li>🧰 <a href="https://refactoring.guru/design-patterns/python">Design Patterns in Python</a></li>
+<li>📗 <a href="https://realpython.com/solid-principles-python/">Real Python – SOLID principles</a></li>
 </ul>
-<h2 id="objetivos">Objetivos</h2>
-<ul>
-<li>Usar Git de forma profesional.</li>
-<li>Configurar repositorios limpios y colaborativos.</li>
-<li>Entender el impacto legal de las licencias.</li>
-</ul>
-<h2 id="recursos">Recursos</h2>
-<ul>
-<li><a href="../git/git.md">git.md</a></li>
-<li><a href="../git/gitignore.md">gitignore.md</a></li>
-<li><a href="../git/github.md">github.md</a></li>
-<li><a href="../git/licensing.md">licensing.md</a></li>
-</ul><style type="text/css">.quiz {
+<hr />
+<h2 id="conclusion">Conclusión</h2>
+<p>Aplicar los principios SOLID en Python permite diseñar software más robusto, flexible y mantenible. No se trata de seguir reglas por seguirlas, sino de tener criterios sólidos para escribir clases y estructuras que puedan adaptarse a cambios con el menor impacto posible.</p>
+<p>Piensa en SOLID como una brújula para el diseño profesional: no dicta el camino exacto, pero te ayuda a evitar muchos errores comunes.</p><style type="text/css">.quiz {
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem 0;
@@ -1467,7 +2091,7 @@ function resetFieldset(fieldset) {
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="../unit2/structure/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Estructura de Proyectos">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 🧠 Unidad 2: Diseño de Software">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1477,20 +2101,20 @@ function resetFieldset(fieldset) {
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Estructura de Proyectos
+                🧠 Unidad 2: Diseño de Software
               </div>
             </div>
           </a>
         
         
           
-          <a href="../unit4/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: ⚙️ Unidad 4: Entornos y Dependencias">
+          <a href="../design_pattern/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Patrones de Diseño">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                ⚙️ Unidad 4: Entornos y Dependencias
+                Patrones de Diseño
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1594,12 +2218,12 @@ function resetFieldset(fieldset) {
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

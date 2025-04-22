@@ -2,38 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/fralfaro/python_se/</loc>
-         <lastmod>2025-04-21</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_se/unit1/</loc>
-         <lastmod>2025-04-21</lastmod>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit1/classes/</loc>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit1/function/</loc>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit1/paradigm/</loc>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit1/pep/</loc>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit1/pydantic/</loc>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit1/pythonic/</loc>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit1/scripts/</loc>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit1/typing/</loc>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_se/unit2/</loc>
-         <lastmod>2025-04-21</lastmod>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit2/design_pattern/</loc>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit2/refactoring/</loc>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit2/solid/</loc>
+         <lastmod>2025-04-22</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/fralfaro/python_se/unit2/structure/</loc>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_se/unit3/</loc>
-         <lastmod>2025-04-21</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_se/unit4/</loc>
-         <lastmod>2025-04-21</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_se/unit5/</loc>
-         <lastmod>2025-04-21</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_se/unit6/</loc>
-         <lastmod>2025-04-21</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_se/unit7/</loc>
-         <lastmod>2025-04-21</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
     <url>
          <loc>https://github.com/fralfaro/python_se/unit8/</loc>
-         <lastmod>2025-04-21</lastmod>
+         <lastmod>2025-04-22</lastmod>
     </url>
 </urlset>

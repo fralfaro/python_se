@@ -10,28 +10,28 @@
         <meta name="author" content="Francisco Alfaro">
       
       
-        <link rel="canonical" href="https://github.com/fralfaro/python_se/unit3/">
+        <link rel="canonical" href="https://github.com/fralfaro/python_se/unit2/design_pattern/">
       
       
-        <link rel="prev" href="../unit2/structure/">
+        <link rel="prev" href="../solid/">
       
       
-        <link rel="next" href="../unit4/">
+        <link rel="next" href="../refactoring/">
       
       
-      <link rel="icon" href="../images/icon.png">
+      <link rel="icon" href="../../images/icon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.25">
     
     
       
-        <title>🌿 Unidad 3: Control de Versiones - Python Software Engineering</title>
+        <title>Patrones de Diseño - Python Software Engineering</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../css/neoteroi-mkdocs.css">
+      <link rel="stylesheet" href="../../css/neoteroi-mkdocs.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unidad-3-control-de-versiones" class="md-skip">
+        <a href="#patrones-de-diseno" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -92,9 +92,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href=".." title="Python Software Engineering" class="md-header__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
+    <a href="../.." title="Python Software Engineering" class="md-header__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
       
-  <img src="../images/python.svg" alt="logo">
+  <img src="../../images/python.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🌿 Unidad 3: Control de Versiones
+              Patrones de Diseño
             
           </span>
         </div>
@@ -222,7 +222,7 @@
     
     
       <li class="md-tabs__item">
-        <a href=".." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -242,32 +242,12 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit1/" class="md-tabs__link">
+        <a href="../../unit1/" class="md-tabs__link">
           
   
     
   
   📖 Unidad 1
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../unit2/" class="md-tabs__link">
-          
-  
-    
-  
-  📖 Unidad 2
 
         </a>
       </li>
@@ -284,7 +264,27 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  📖 Unidad 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../unit3/" class="md-tabs__link">
           
   
     
@@ -304,7 +304,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit4/" class="md-tabs__link">
+        <a href="../../unit4/" class="md-tabs__link">
           
   
     
@@ -324,7 +324,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit5/" class="md-tabs__link">
+        <a href="../../unit5/" class="md-tabs__link">
           
   
     
@@ -344,7 +344,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit6/" class="md-tabs__link">
+        <a href="../../unit6/" class="md-tabs__link">
           
   
     
@@ -364,7 +364,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit7/" class="md-tabs__link">
+        <a href="../../unit7/" class="md-tabs__link">
           
   
     
@@ -384,7 +384,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../unit8/" class="md-tabs__link">
+        <a href="../../unit8/" class="md-tabs__link">
           
   
     
@@ -419,9 +419,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Python Software Engineering" class="md-nav__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
+    <a href="../.." title="Python Software Engineering" class="md-nav__button md-logo" aria-label="Python Software Engineering" data-md-component="logo">
       
-  <img src="../images/python.svg" alt="logo">
+  <img src="../../images/python.svg" alt="logo">
 
     </a>
     Python Software Engineering
@@ -469,7 +469,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -541,7 +541,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit1/" class="md-nav__link ">
+            <a href="../../unit1/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -574,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pep/" class="md-nav__link">
+      <a href="../../unit1/pep/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/scripts/" class="md-nav__link">
+      <a href="../../unit1/scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -616,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/paradigm/" class="md-nav__link">
+      <a href="../../unit1/paradigm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -637,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/function/" class="md-nav__link">
+      <a href="../../unit1/function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -658,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/classes/" class="md-nav__link">
+      <a href="../../unit1/classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -679,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/typing/" class="md-nav__link">
+      <a href="../../unit1/typing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -700,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pydantic/" class="md-nav__link">
+      <a href="../../unit1/pydantic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -721,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit1/pythonic/" class="md-nav__link">
+      <a href="../../unit1/pythonic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -746,6 +746,8 @@
       
   
   
+    
+  
   
   
     
@@ -766,19 +768,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit2/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -789,13 +794,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 2
@@ -811,7 +816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/solid/" class="md-nav__link">
+      <a href="../solid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -829,10 +834,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../unit2/design_pattern/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Patrones de Diseño
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -841,6 +866,218 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-usar-patrones-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué usar patrones de diseño?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clasificacion-de-los-patrones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clasificación de los patrones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-singleton-un-solo-objeto-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Singleton – Un solo objeto global
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Singleton – Un solo objeto global">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-tipico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso típico:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo en Python:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-factory-crear-objetos-segun-condiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Factory – Crear objetos según condiciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Factory – Crear objetos según condiciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-tipico_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso típico:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-strategy-intercambiar-algoritmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Strategy – Intercambiar algoritmos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Strategy – Intercambiar algoritmos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-tipico_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso típico:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-decorator-anadir-funcionalidad-sin-modificar-clases" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Decorator – Añadir funcionalidad sin modificar clases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Decorator – Añadir funcionalidad sin modificar clases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-tipico_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso típico:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-observer-reaccionar-a-cambios-en-tiempo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Observer – Reaccionar a cambios en tiempo real
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Observer – Reaccionar a cambios en tiempo real">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-tipico_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso típico:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas-al-usar-patrones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas al usar patrones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errores comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos recomendados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -853,7 +1090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/refactoring/" class="md-nav__link">
+      <a href="../refactoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -874,7 +1111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../unit2/structure/" class="md-nav__link">
+      <a href="../structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,8 +1136,6 @@
       
   
   
-    
-  
   
   
     
@@ -913,22 +1148,19 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../unit3/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -940,7 +1172,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             📖 Unidad 3
@@ -984,7 +1216,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit4/" class="md-nav__link ">
+            <a href="../../unit4/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1040,7 +1272,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit5/" class="md-nav__link ">
+            <a href="../../unit5/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1096,7 +1328,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit6/" class="md-nav__link ">
+            <a href="../../unit6/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1152,7 +1384,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit7/" class="md-nav__link ">
+            <a href="../../unit7/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1208,7 +1440,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../unit8/" class="md-nav__link ">
+            <a href="../../unit8/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1263,27 +1495,192 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contenidos" class="md-nav__link">
+  <a href="#introduccion" class="md-nav__link">
     <span class="md-ellipsis">
-      Contenidos
+      Introducción
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
+  <a href="#por-que-usar-patrones-de-diseno" class="md-nav__link">
     <span class="md-ellipsis">
-      Objetivos
+      ¿Por qué usar patrones de diseño?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#recursos" class="md-nav__link">
+  <a href="#clasificacion-de-los-patrones" class="md-nav__link">
     <span class="md-ellipsis">
-      Recursos
+      Clasificación de los patrones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-singleton-un-solo-objeto-global" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Singleton – Un solo objeto global
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Singleton – Un solo objeto global">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-tipico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso típico:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo en Python:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-factory-crear-objetos-segun-condiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Factory – Crear objetos según condiciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Factory – Crear objetos según condiciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-tipico_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso típico:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-strategy-intercambiar-algoritmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Strategy – Intercambiar algoritmos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Strategy – Intercambiar algoritmos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-tipico_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso típico:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-decorator-anadir-funcionalidad-sin-modificar-clases" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Decorator – Añadir funcionalidad sin modificar clases
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Decorator – Añadir funcionalidad sin modificar clases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-tipico_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso típico:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-observer-reaccionar-a-cambios-en-tiempo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Observer – Reaccionar a cambios en tiempo real
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Observer – Reaccionar a cambios en tiempo real">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-tipico_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso típico:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas-al-usar-patrones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas al usar patrones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#errores-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Errores comunes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos recomendados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
     </span>
   </a>
   
@@ -1304,28 +1701,187 @@
                   
 
 
-<h1 id="unidad-3-control-de-versiones">🌿 Unidad 3: Control de Versiones</h1>
-<p>Aprende a trabajar colaborativamente y a gestionar el historial de tu código con Git y GitHub.</p>
-<h2 id="contenidos">Contenidos</h2>
+<h1 id="patrones-de-diseno">Patrones de Diseño</h1>
+<p><img src="../images/dp.png" alt="Banner del Curso" width="600" ></p>
+<h2 id="introduccion">Introducción</h2>
+<p>Los <strong>patrones de diseño</strong> son soluciones reutilizables a problemas comunes en el desarrollo de software. No son fragmentos de código listos para copiar y pegar, sino estructuras probadas que ayudan a diseñar sistemas más claros, extensibles y robustos.</p>
+<p>En Python, gracias a su flexibilidad y naturaleza dinámica, muchos patrones pueden implementarse de manera más sencilla que en lenguajes más estáticos. Este capítulo explora algunos de los patrones más útiles y cómo aplicarlos en el contexto de desarrollo moderno con Python.</p>
+<hr />
+<h2 id="por-que-usar-patrones-de-diseno">¿Por qué usar patrones de diseño?</h2>
 <ul>
-<li>Git: flujo de trabajo, ramas y commits</li>
-<li>Gitignore y limpieza del repositorio</li>
-<li>GitHub: colaboración y gestión de repositorios</li>
-<li>Licencias de software</li>
+<li>💡 Estandarizan soluciones en equipos y comunidades.</li>
+<li>🧩 Promueven la reutilización del conocimiento.</li>
+<li>📐 Mejoran la arquitectura de sistemas complejos.</li>
+<li>🚫 Ayudan a evitar malas prácticas como duplicación o acoplamiento innecesario.</li>
 </ul>
-<h2 id="objetivos">Objetivos</h2>
+<hr />
+<h2 id="clasificacion-de-los-patrones">Clasificación de los patrones</h2>
+<p>Los patrones se suelen dividir en tres categorías principales:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Propósito</th>
+<th>Ejemplos comunes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Creacionales</strong></td>
+<td>Controlar la creación de objetos</td>
+<td>Singleton, Factory, Builder</td>
+</tr>
+<tr>
+<td><strong>Estructurales</strong></td>
+<td>Organizar relaciones entre clases</td>
+<td>Adapter, Decorator, Composite</td>
+</tr>
+<tr>
+<td><strong>Comportamiento</strong></td>
+<td>Gestionar algoritmos y responsabilidades</td>
+<td>Strategy, Observer, Command</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-singleton-un-solo-objeto-global">1. Singleton – Un solo objeto global</h2>
+<h3 id="uso-tipico">Uso típico:</h3>
+<p>Cuando necesitas garantizar que solo haya <strong>una única instancia de una clase</strong> (como una conexión global o una configuración).</p>
+<h3 id="ejemplo-en-python">Ejemplo en Python:</h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Config</span><span class="p">:</span>
+    <span class="n">_instancia</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_instancia</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">cls</span><span class="o">.</span><span class="n">_instancia</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_instancia</span>
+
+<span class="n">config1</span> <span class="o">=</span> <span class="n">Config</span><span class="p">()</span>
+<span class="n">config2</span> <span class="o">=</span> <span class="n">Config</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">config1</span> <span class="ow">is</span> <span class="n">config2</span><span class="p">)</span>  <span class="c1"># True</span>
+</code></pre></div>
+<blockquote>
+<p>☝️ Usa este patrón con precaución. A menudo se prefiere la <strong>inyección de dependencias</strong> sobre el acceso global.</p>
+</blockquote>
+<hr />
+<h2 id="2-factory-crear-objetos-segun-condiciones">2. Factory – Crear objetos según condiciones</h2>
+<h3 id="uso-tipico_1">Uso típico:</h3>
+<p>Cuando quieres <strong>delegar la creación de objetos</strong> sin acoplarte a clases concretas.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Perro</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">hablar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Guau&quot;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Gato</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">hablar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Miau&quot;</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">fabrica_animal</span><span class="p">(</span><span class="n">tipo</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="n">clases</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;perro&quot;</span><span class="p">:</span> <span class="n">Perro</span><span class="p">,</span> <span class="s2">&quot;gato&quot;</span><span class="p">:</span> <span class="n">Gato</span><span class="p">}</span>
+    <span class="k">return</span> <span class="n">clases</span><span class="p">[</span><span class="n">tipo</span><span class="p">]()</span>
+
+<span class="n">animal</span> <span class="o">=</span> <span class="n">fabrica_animal</span><span class="p">(</span><span class="s2">&quot;gato&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">animal</span><span class="o">.</span><span class="n">hablar</span><span class="p">())</span>  <span class="c1"># Miau</span>
+</code></pre></div>
+<blockquote>
+<p>🔍 El patrón Factory es muy útil cuando los tipos a crear pueden cambiar dinámicamente.</p>
+</blockquote>
+<hr />
+<h2 id="3-strategy-intercambiar-algoritmos">3. Strategy – Intercambiar algoritmos</h2>
+<h3 id="uso-tipico_2">Uso típico:</h3>
+<p>Cuando tienes múltiples formas de realizar una tarea y quieres que el algoritmo sea <strong>intercambiable</strong> sin modificar el código que lo usa.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">PagoEstrategia</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">pagar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">monto</span><span class="p">):</span> <span class="k">pass</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">PagoPaypal</span><span class="p">(</span><span class="n">PagoEstrategia</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">pagar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">monto</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Pagando $</span><span class="si">{</span><span class="n">monto</span><span class="si">}</span><span class="s2"> con PayPal&quot;</span><span class="p">)</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">PagoTarjeta</span><span class="p">(</span><span class="n">PagoEstrategia</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">pagar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">monto</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Pagando $</span><span class="si">{</span><span class="n">monto</span><span class="si">}</span><span class="s2"> con Tarjeta&quot;</span><span class="p">)</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Tienda</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">estrategia</span><span class="p">:</span> <span class="n">PagoEstrategia</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">estrategia</span> <span class="o">=</span> <span class="n">estrategia</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">procesar_pago</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">monto</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">estrategia</span><span class="o">.</span><span class="n">pagar</span><span class="p">(</span><span class="n">monto</span><span class="p">)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">Tienda</span><span class="p">(</span><span class="n">PagoTarjeta</span><span class="p">())</span>
+<span class="n">t</span><span class="o">.</span><span class="n">procesar_pago</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>💡 Ideal para sistemas extensibles donde las reglas cambian según el contexto.</p>
+</blockquote>
+<hr />
+<h2 id="4-decorator-anadir-funcionalidad-sin-modificar-clases">4. Decorator – Añadir funcionalidad sin modificar clases</h2>
+<h3 id="uso-tipico_3">Uso típico:</h3>
+<p>Agregar comportamiento a objetos sin modificar su estructura original.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">auditar</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">envoltura</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ejecutando:&quot;</span><span class="p">,</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">envoltura</span>
+
+<span class="nd">@auditar</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">saludar</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Hola!&quot;</span><span class="p">)</span>
+
+<span class="n">saludar</span><span class="p">()</span>
+</code></pre></div>
+<blockquote>
+<p>🧩 Python lo hace especialmente fácil gracias a su sintaxis con <code>@decorators</code>.</p>
+</blockquote>
+<hr />
+<h2 id="5-observer-reaccionar-a-cambios-en-tiempo-real">5. Observer – Reaccionar a cambios en tiempo real</h2>
+<h3 id="uso-tipico_4">Uso típico:</h3>
+<p>Cuando múltiples objetos deben ser notificados automáticamente ante un cambio en otro.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Sujeto</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_observadores</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">suscribir</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_observadores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">obs</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">notificar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mensaje</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">obs</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_observadores</span><span class="p">:</span>
+            <span class="n">obs</span><span class="o">.</span><span class="n">actualizar</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Observador</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">actualizar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mensaje</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Notificación:&quot;</span><span class="p">,</span> <span class="n">mensaje</span><span class="p">)</span>
+
+<span class="n">sujeto</span> <span class="o">=</span> <span class="n">Sujeto</span><span class="p">()</span>
+<span class="n">obs1</span> <span class="o">=</span> <span class="n">Observador</span><span class="p">()</span>
+<span class="n">sujeto</span><span class="o">.</span><span class="n">suscribir</span><span class="p">(</span><span class="n">obs1</span><span class="p">)</span>
+<span class="n">sujeto</span><span class="o">.</span><span class="n">notificar</span><span class="p">(</span><span class="s2">&quot;Nuevo evento&quot;</span><span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>🔔 Muy usado en interfaces gráficas, sistemas de eventos o notificaciones.</p>
+</blockquote>
+<hr />
+<h2 id="buenas-practicas-al-usar-patrones">Buenas prácticas al usar patrones</h2>
+<p>✅ Usa patrones <strong>cuando el problema lo justifique</strong>, no por moda<br />
+✅ Refactoriza código repetitivo o acoplado en torno a un patrón claro<br />
+✅ Combina patrones si es necesario (ej. Strategy + Factory)<br />
+✅ Documenta bien el propósito del patrón en tu código  </p>
+<hr />
+<h2 id="errores-comunes">Errores comunes</h2>
+<p>❌ Sobreingeniería: aplicar patrones innecesarios para problemas simples<br />
+❌ Usar clases abstractas donde Python permite funciones o duck typing<br />
+❌ Forzar herencia donde sería mejor composición<br />
+❌ Implementar patrones “como en Java” sin aprovechar la idiomaticidad de Python</p>
+<hr />
+<h2 id="recursos-recomendados">Recursos recomendados</h2>
 <ul>
-<li>Usar Git de forma profesional.</li>
-<li>Configurar repositorios limpios y colaborativos.</li>
-<li>Entender el impacto legal de las licencias.</li>
+<li>📘 <a href="https://refactoring.guru/design-patterns/python">Refactoring.Guru – Design Patterns</a></li>
+<li>📚 <em>Head First Design Patterns</em> (adaptado a Python)</li>
+<li>🧰 <a href="https://github.com/faif/python-patterns">Python Patterns (GitHub)</a></li>
+<li>🐍 <em>Fluent Python</em>, Luciano Ramalho – Capítulos sobre diseño avanzado</li>
 </ul>
-<h2 id="recursos">Recursos</h2>
-<ul>
-<li><a href="../git/git.md">git.md</a></li>
-<li><a href="../git/gitignore.md">gitignore.md</a></li>
-<li><a href="../git/github.md">github.md</a></li>
-<li><a href="../git/licensing.md">licensing.md</a></li>
-</ul><style type="text/css">.quiz {
+<hr />
+<h2 id="conclusion">Conclusión</h2>
+<p>Los patrones de diseño no son reglas estrictas, sino soluciones flexibles para problemas frecuentes en la arquitectura de software. Aplicarlos correctamente en Python requiere entender tanto el patrón como las fortalezas del lenguaje. Con práctica y criterio, los patrones pueden ayudarte a escribir software más limpio, mantenible y preparado para crecer.</p><style type="text/css">.quiz {
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem 0;
@@ -1467,7 +2023,7 @@ function resetFieldset(fieldset) {
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href="../unit2/structure/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Estructura de Proyectos">
+          <a href="../solid/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Principio SOLID">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1477,20 +2033,20 @@ function resetFieldset(fieldset) {
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Estructura de Proyectos
+                Principio SOLID
               </div>
             </div>
           </a>
         
         
           
-          <a href="../unit4/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: ⚙️ Unidad 4: Entornos y Dependencias">
+          <a href="../refactoring/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Refactorización de Código">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                ⚙️ Unidad 4: Entornos y Dependencias
+                Refactorización de Código
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1594,12 +2150,12 @@ function resetFieldset(fieldset) {
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "navigation.indexes", "content.tooltips", "navigation.path", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.tabs", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
